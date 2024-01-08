@@ -1,11 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Feed from "./components/Feed";
+import SearchResult from "./components/SearchResult";
+import VideoDetails from "./components/VideoDetails";
 import { AppContext } from "./context/contextApi";
 
 function App() {
   return (
     <AppContext>
-      <div className="">
-        <p className="text-3xl ">hellohiii</p>
-      </div>
+      <BrowserRouter>
+        <div className="flex flex-col h-full">
+          <Header />
+        </div>
+      </BrowserRouter>
     </AppContext>
   );
 }
