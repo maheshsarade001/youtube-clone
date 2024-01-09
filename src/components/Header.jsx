@@ -42,7 +42,7 @@ function Header() {
       <div className=" flex h-5 items-center">
         {pageName !== "video" && (
           <div
-            className="flex md:hidden md:mr-6 cursor-pointer items-center justify-center h-10 w-10 rounded-full hover:bg-[#030303]/[0.6]"
+            className="flex md:hidden md:mr-6 cursor-pointer items-center justify-center h-10 w-10 rounded-full hover:bg-[#303030]/[0.6]"
             onClick={mobileMenuToggle}
           >
             {mobileMenu ? (
@@ -54,7 +54,7 @@ function Header() {
         )}
         <Link to="/" className="flex h-5 items-center">
           <img
-            className="h-full hidden dark:md:block"
+            className="h-full hidden dark:md:block "
             src={YT_Logo}
             alt="Youtube"
           />
