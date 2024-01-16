@@ -2,7 +2,7 @@ import React from "react";
 
 import { abbreviateNumber } from "js-abbreviation-number";
 import { Link } from "react-router-dom";
-import { bsFillCheckCircleFill } from "react-icons/bs";
+import { BsFillCheckCircleFill } from "react-icons/bs";
 import VideoLength from "./VideoLength";
 
 const VideoCard = ({ video }) => {
@@ -34,7 +34,7 @@ const VideoCard = ({ video }) => {
             <span className="text-xs font-semibold mt-2 text-white/70 flex items-center">
               {video?.author?.title}
               {video?.author?.badges[0]?.type === "VERIFIED_CHANNEL" && (
-                <bsFillCheckCircleFill className="text-white/50 text-xs ml-1" />
+                <BsFillCheckCircleFill className="text-white/50 text-xs ml-1" />
               )}
             </span>
             <div className="flex text-xs font-semibold text-white/70 truncate overflow-hidden">
