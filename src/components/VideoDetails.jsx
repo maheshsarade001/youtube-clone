@@ -52,16 +52,17 @@ const VideoDetails = () => {
     }, 3000);
   };
   return (
-    <div className="flex justify-center flex-row h-[calc(100% - 56px)] bg-black">
+    <div className="flex justify-center flex-row h-[calc(100%-56px)] bg-black">
       <div className="w-full max-w-7xl flex flex-col lg:flex-row">
-        <div className="flex flex-col lg:w-[calc(100% - 350px)] xl-w-[calc(100% - 400px)] px-4 py-3 lg:py-6 overflow-y-auto ">
-          <div className="h-[200px] md:h-[400px] lg:h-[400px] xl:h-[550px] -ml-4 lg:ml-0 -mr-4 lg:mr-0 ">
+        <div className="flex flex-col lg:w-[calc(100%-350px)] xl-w-[calc(100%-400px)] px-4 py-3 lg:py-6 overflow-y-auto ">
+          <div className="h-[200px] md:h-[400px] lg:h-[400px] xl:h-[550px] ml-[-16px] lg:ml-0 mr-[-16px] lg:mr-0 ">
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${id}`}
               controls
               width="100%"
               height="100%"
-              style={{ backgroundColor: "#000000" }}
+              style={{ backgroundColor: "#000000", padding: "10px" }}
+              playing={true}
             />
           </div>
           <div className="text-white font-bold text-sm md:text-xl mt-4 line-clamp-2">
@@ -107,6 +108,13 @@ const VideoDetails = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="flex flex-col py-6 px-4 overflow-y-auto lg:w-[350px] xl:w-[400px] ">
+          {relatedVideoDetails.contents.map((item, index) => {
+            if (item?.type !== "video") return false;
+            return <SuggestionVideoCard key={index} video={item?.video} />;
+          })}
         </div>
       </div>
     </div>
