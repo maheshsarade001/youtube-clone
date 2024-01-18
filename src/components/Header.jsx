@@ -92,13 +92,13 @@ function Header() {
           <div className="flex items-center justify-center h-10 w-10 ml-2 rounded-full hover:bg-[#303030]/[0.6]">
             <FiBell className="text-white text-xl cursor-pointer" />
           </div>
-          <div>
-            <img
-              className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4"
-              src="https://xsgames.co/randomusers/avatar.php?g=male"
-              alt="user"
-            />
-          </div>
+        </div>
+        <div>
+          <img
+            className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4"
+            src="https://xsgames.co/randomusers/avatar.php?g=male"
+            alt="user"
+          />
         </div>
       </div>
     </div>
