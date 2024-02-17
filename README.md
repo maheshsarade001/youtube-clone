@@ -1,10 +1,12 @@
 # YouTube Clone Project
 
+## NOTE : Due to reaching the monthly API request limit, I've used hard-coded data for demonstration purposes while awaiting a reset of the API request limit..
+
 ## Description
 
 This project is a YouTube clone that replicates some of the core features of the popular video-sharing platform. It utilizes the Rapid API's API for fetching video data, Tailwind CSS for styling, Axios for making HTTP requests, React-Icons for including scalable icons, and React-Player for embedding YouTube videos. The state management is handled using the Context API, allowing seamless data sharing between components.
 
-View the live demo: [YouTube Clone Demo](https://youtube-rho-beige.vercel.app/)
+View the live demo: [YouTube Clone Demo](https://youtube-clone-wheat-iota.vercel.app/)
 
 ## Technologies Used
 
